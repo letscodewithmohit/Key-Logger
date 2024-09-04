@@ -1,0 +1,94 @@
+/* General Styles */
+h1 {
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 6px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  background-color: cyan;
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px; /* Adjust padding for better spacing */
+}
+
+#log,
+#state {
+  min-width: 200px; /* Minimum width when empty */
+  max-width: 400px; /* Maximum width when content is present */
+  height: 50px;
+  border: 2px solid;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: lawngreen;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+  justify-content: center; /* Center the buttons */
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+#start-btn:hover {
+  background: rgb(133, 241, 133);
+  color: white;
+}
+
+#stop-btn:hover {
+  background: #f26767;
+  color: white;
+}
+
+#para {
+  font-size: 20px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .container {
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  #log,
+  #state {
+    width: 90%;
+    margin-top: 15px;
+  }
+
+  button {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 24px; /* Adjust header size for smaller screens */
+    padding: 10px;
+  }
+
+  #para {
+    font-size: 18px; /* Slightly smaller font for mobile */
+  }
+}
